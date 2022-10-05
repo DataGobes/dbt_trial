@@ -1,0 +1,11 @@
+dbt_trial:
+  outputs:
+    dev:
+      catalog: main
+      host: "{{ env_var('databricks_host') }}"
+      http_path: /sql/1.0/endpoints/52708f9fe5353308
+      schema: dbt
+      threads: 4
+      token: "{{ env_var('databricks_token') }}"
+      type: databricks
+  target: dev
