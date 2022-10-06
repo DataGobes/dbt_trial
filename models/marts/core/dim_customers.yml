@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: ""
+    columns:
+      - name: customer_id
+        description: PK, primary key of the customer
+      
+      - name: first_name
+        description: "the first name of the customer"
+
+      - name: last_name
+        description: "the last name of the customer"
+
+      - name: first_order_date
+        description: "the first order date for this customer"
+
+      - name: most_recent_order_date
+        description: "the most recent order date for this customer"
+
+      - name: lifetime_value
+        description: "the lifetime amount spent for this customer"
+
+      - name: number_of_orders
+        description: "the number of orders placed for this customer"
